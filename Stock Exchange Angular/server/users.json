@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "username": "Gurudutt",
+      "password": "samdhe",
+      "userType": "user",
+      "email": "asd@asd.com",
+      "phone": 12345556456
+    },
+    {
+      "id": "123",
+      "username": "Syed ",
+      "password": "asdakjd",
+      "userType": "user",
+      "email": "kjdshf@ksjdfh",
+      "phone": 213123123132
+    },
+    {
+      "id": "456",
+      "username": "vishnu",
+      "password": "akjdnkjw",
+      "userType": "user",
+      "email": "vajoi@alkfjnal",
+      "phone": 342424242
+    }
+  ]
+}

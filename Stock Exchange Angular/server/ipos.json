@@ -1,0 +1,20 @@
+{
+  "ipos": [
+    {
+      "id": 1,
+      "companyName": "intel",
+      "stockExchange": "asdadd",
+      "pricePerShare": 23,
+      "noOfShares": "23",
+      "openDate": "2020-12-12"
+    },
+    {
+      "id": 2,
+      "companyName": "apple",
+      "stockExchange": "yes",
+      "pricePerShare": 4323,
+      "noOfShares": "12",
+      "openDate": "2020-02-12"
+    }
+  ]
+}

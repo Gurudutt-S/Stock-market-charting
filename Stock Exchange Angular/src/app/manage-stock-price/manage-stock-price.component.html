@@ -1,0 +1,41 @@
+<h2 class="display-5 text-muted text-center my-3"><i class="fa fa-inr fa-lg" aria-hidden="true"></i>&nbsp; Manage Stock
+    Price
+</h2>
+<hr>
+<div class="text-center mb-3">
+    <button class="btn border-dark" routerLink="/admin/add-stockPrice"><i class="fa fa-inr fa-lg"
+            aria-hidden="true"></i>&nbsp; Add Stock
+        Price</button>
+</div>
+
+<div class="row">
+
+    <div class="container-fluid col-12 col-md-10 w-75">
+        <div class="table-responsive">
+            <table class="table  table-striped table-light table-hover">
+                <tr>
+                    <th>Id</th>
+                    <th>Company Code</th>
+                    <th>Stock Exchange</th>
+                    <th>Current Price</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+                <tbody>
+                    <tr *ngFor="let price of stockPriceList">
+                        <td>{{price.id}}</td>
+                        <td>{{price.companyCode}}</td>
+                        <td>{{price.stockExchange}}</td>
+                        <td>{{price.currentPrice}}</td>
+                        <td>{{price.date}}</td>
+                        <td>{{price.time}}</td>
+                        <td><i class="fa fa-pencil fa-lg" aria-hidden="true" (click)="updateStockPrice(price)"></i></td>
+                        <td><i class="fa fa-trash fa-lg" aria-hidden="true" (click)="deleteStockPrice(price)"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

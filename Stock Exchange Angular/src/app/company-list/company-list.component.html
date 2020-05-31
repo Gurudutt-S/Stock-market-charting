@@ -1,0 +1,45 @@
+<h2 class="display-5 text-muted text-center my-3"><i class="fa fa-building fa-lg" aria-hidden="true"></i>&nbsp; Manage
+    Company</h2>
+<hr>
+<div class="text-center mb-3">
+    <button class="btn border-dark" routerLink="/admin/add-company"> <i class="fa fa-building fa-lg"
+            aria-hidden="true"></i>&nbsp; Add Company</button>
+</div>
+
+<div class="row">
+
+    <div class="container-fluid col-12 col-md-10">
+        <div class="table-responsive">
+            <table class="table table-striped table-light table-hover">
+                <tr>
+                    <th>Id</th>
+                    <th>Company Name</th>
+                    <th>CEO name</th>
+                    <th>TurnOver</th>
+                    <th>Board of Directors</th>
+                    <th>Sector</th>
+                    <th>IPO Name</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+
+                <tbody>
+                    <tr *ngFor="let company of companyList">
+                        <td>{{company.id}}</td>
+                        <td>{{company.companyName}}</td>
+                        <td>{{company.ceoName}}</td>
+                        <td>{{company.turnover}}</td>
+                        <td>{{company.boardOfDirectors}}</td>
+                        <td>{{company.sector}}</td>
+                        <td>{{company.iponame}}</td>
+                        <td><i class="fa fa-pencil fa-lg" aria-hidden="true" (click)="updateCompany(company)"></i>&nbsp;
+                        </td>
+                        <td><i class="fa fa-trash fa-lg" aria-hidden="true" (click)="deleteCompany(company)"></i>&nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>

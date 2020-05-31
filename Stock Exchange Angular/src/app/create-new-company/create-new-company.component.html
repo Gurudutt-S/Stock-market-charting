@@ -1,0 +1,59 @@
+<h2 class="display-5 text-muted text-center my-3"><i class="fa fa-building fa-lg" aria-hidden="true"></i>&nbsp;Create
+    New Company</h2>
+<hr>
+
+<div class="row">
+    <div class="container-fluid col-12 col-md-10">
+        <form class="p-2 p-md-5 jumbotron shadow" [formGroup]="addCompany" (ngSubmit)="saveCompany()">
+
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" class="form-control" formControlName="companyName" id="companyName"
+                        placeholder="Enter company name">
+                </div>
+                <div class="form-group col col-12 col-md-6">
+                    <label for="CEOName">CEO name:</label>
+                    <input type="text" class="form-control" formControlName="ceoName" id="CEOName"
+                        placeholder=" Name of CEO or a Board Member">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col col-12 col-md-6">
+                    <label for="turnOver">TurnOver:</label>
+                    <input type="text" class="form-control" formControlName="turnover" id="turnOver"
+                        placeholder=" TurnOver">
+                </div>
+                <div class="form-group col col-12 col-md-6">
+                    <label for="boardOfDirectors">Board of Directors:</label>
+                    <input type="text" class="form-control" formControlName="boardOfDirectors" id="boardOfDirectors"
+                        placeholder=" Board of Directors">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col col-12 col-md-6">
+                    <label class="sector"> Sector:</label>
+                    <input type="text" class="form-control" formControlName="sector" id="sector"
+                        placeholder=" Name of Sector">
+                </div>
+                <div class="form-group col col-12 col-md-6">
+                    <label for="IPOName">IPO Name:</label>
+                    <input type="text" class="form-control" formControlName="iponame" id="IPOName"
+                        placeholder=" IPO Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Breif:</label>
+                <textarea class="form-control" formControlName="description" id="description"
+                    placeholder="Maximum 100 words"></textarea>
+            </div>
+
+            <div class="text-center mt-3">
+                <input type="reset" class="btn btn-sm-sm  btn-info px-1 px-md-5 mr-2">
+                <input type="submit" class="btn  btn-sm-sm btn-success px-1 px-md-5 ml-2">
+            </div>
+
+        </form>
+    </div>
+</div>

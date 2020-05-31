@@ -1,0 +1,46 @@
+<h2 class="display-5 text-center my-3 text-muted"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i>&nbsp;Update User
+</h2>
+<hr>
+
+<div class="row">
+
+    <div class="container-fluid col-12 col-md-10">
+
+        <form class="p-1 p-md-5 jumbotron shadow" [formGroup]="updateUser" (ngSubmit)="saveUser()">
+
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="id">Id:</label>
+                    <input type="text" class="form-control " id="id" formControlName="id" placeholder="Enter your ID"
+                        disabled>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" formControlName="username"
+                        placeholder=" Should contain letters and numbers">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" class="form-control" id="password" formControlName="password"
+                    placeholder=" Use Strong password">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" formControlName="email" placeholder=" asd@asd.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">phone:</label>
+                <input type="number" class="form-control" id="phone" formControlName="phone"
+                    placeholder=" Phone Number">
+            </div>
+
+            <div class="text-center mt-4 mb-2">
+                <button type="submit" class="btn  btn-success px-5 mx-3" (click)="updateTheUser(user)">Update
+                    User</button>
+            </div>
+        </form>
+
+    </div>
+</div>

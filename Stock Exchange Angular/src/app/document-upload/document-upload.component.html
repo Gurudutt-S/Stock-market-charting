@@ -1,0 +1,23 @@
+<h2 class="display-5 text-center text-muted my-3"><i class="fa fa-file-excel-o fa-lg" aria-hidden="true"></i>
+    &nbsp;Upload
+    Excel</h2>
+<hr>
+
+<div class="row mt-5">
+
+    <div class=" col-12">
+        <div class="card" style="background:none;border:none;">
+            <form [formGroup]="uploadFile" class="custom-file form-control" style="width: 400px; margin: auto;">
+                <div class="formGroup">
+                    <input type="file" formControlName="file" class="formControl custom-file-input ">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+
+                <div class="float-right mt-2">
+                    <input type="submit" class="btn border-dark px-5">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

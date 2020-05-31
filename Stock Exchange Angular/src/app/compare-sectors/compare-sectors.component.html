@@ -1,0 +1,26 @@
+<h2 class="display-5 text-muted text-center my-3"><i class="fa fa-desktop fa-lg"></i>&nbsp; Compare Sector</h2>
+<hr>
+
+<div class="row">
+    <div class="container-fluid col-12 col-md-10">
+
+        <form class="p-2 p-md-5 jumbotron shadow" [formGroup]="compareSector">
+
+            <div class="form-group ">
+                <label for="selectSector">Select Sector:</label>
+                <input type="text" class="form-control mb-3" formControlName="selectSector"
+                    placeholder="Enter Sector name">
+            </div>
+            <div class="form-group ">
+                <label for="selectStock">Select Stock Exchange:</label>
+                <input type="text" class="form-control mb-3" formControlName="selectStock"
+                    placeholder=" Name of CEO or a Board Member">
+            </div>
+            <div class="row justify-content-center">
+                <input type="reset" value="Compare" class="btn btn-info mx-1 px-1 px-md-5">
+                <input type="submit" value="Generate Maps" class="btn btn-success mx-1 px-1 px-md-5">
+            </div>
+
+        </form>
+    </div>
+</div>
